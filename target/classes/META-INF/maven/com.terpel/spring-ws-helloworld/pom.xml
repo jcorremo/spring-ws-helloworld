@@ -39,6 +39,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
       <!-- maven-jaxb2-plugin -->
+      <!-- 
       <plugin>
         <groupId>org.jvnet.jaxb2.maven2</groupId>
         <artifactId>maven-jaxb2-plugin</artifactId>
@@ -51,12 +52,15 @@
           </execution>
         </executions>
         <configuration>
+        
           <schemaDirectory>${project.basedir}/src/main/resources/wsdl</schemaDirectory>
           <schemaIncludes>
             <include>*.wsdl</include>
           </schemaIncludes>
+          <sourceDestDir>${project.basedir}/src/main/java</sourceDestDir>
         </configuration>
       </plugin>
+       -->
     </plugins>
   </build>
 </project>
