@@ -21,7 +21,7 @@ public class HelloWorldEndpoint {
     ObjectFactory factory = new ObjectFactory();
     Greeting response = factory.createGreeting();
     response.setGreeting(greeting);
-
+    System.out.println(response.toString());
     return response;
   }
 }
