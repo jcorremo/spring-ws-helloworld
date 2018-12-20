@@ -68,4 +68,10 @@ public class Greeting {
         this.greeting = value;
     }
 
+	@Override
+	public String toString() {
+		return "Greeting [greeting=" + greeting + "]";
+	}
+    
+    
 }
